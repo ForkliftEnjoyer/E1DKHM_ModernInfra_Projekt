@@ -8,7 +8,9 @@ on:
 
 jobs:
   unit-tests:
-    runs-on: python:3.10-bullseye
+    runs-on: self-hosted
+    container:
+        image: python:3.10-bullseye
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
