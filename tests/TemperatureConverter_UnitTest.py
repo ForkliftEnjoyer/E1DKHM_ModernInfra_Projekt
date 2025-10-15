@@ -1,4 +1,11 @@
+import os
+import sys
 import unittest
+
+# Ensure project root is on sys.path so tests can import `src.*` whether
+# they're run from the repository root or from the `tests/` directory.
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 from src.TemperatureConverter import TemperatureConverter
 
 class TestTemperatureConverterUnit(unittest.TestCase):
