@@ -1,4 +1,5 @@
 import unittest
+from src.TemperatureConverter import TemperatureConverter
 
 class TestTemperatureConverterIntegration(unittest.TestCase):
     def setUp(self):
